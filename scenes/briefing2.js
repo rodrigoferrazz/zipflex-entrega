@@ -9,9 +9,9 @@ class briefing2 extends Phaser.Scene {
 
     preload() {
         // Carregamento dos assets necessários para a cutscene
-        this.load.image('cursor', '../assets/cursor.png');
-        this.load.image('click', '../assets/click.png');
-        this.load.image('site2', '../assets/2.png');
+        this.load.image('cursor', '/assets/cursor.png');
+        this.load.image('click', '/assets/click.png');
+        this.load.image('site2', '/assets/2.png');
     }
 
     create() {
