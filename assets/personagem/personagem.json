@@ -1,0 +1,44 @@
+{"frames": [
+
+{
+	"filename": "corre1.png",
+	"frame": {"x":0,"y":0,"w":21,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":21,"h":35},
+	"sourceSize": {"w":21,"h":35}
+},
+{
+	"filename": "corre2.png",
+	"frame": {"x":21,"y":0,"w":23,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":34},
+	"sourceSize": {"w":23,"h":34}
+},
+{
+	"filename": "pula1.png",
+	"frame": {"x":44,"y":0,"w":19,"h":36},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":36},
+	"sourceSize": {"w":19,"h":36}
+},
+{
+	"filename": "pula2.png",
+	"frame": {"x":63,"y":0,"w":22,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":37},
+	"sourceSize": {"w":22,"h":37}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "personagem.png",
+	"format": "RGBA8888",
+	"size": {"w":85,"h":37},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:86beed6fe85648aa3fb28e10827c53f1:d14e4022987088bb96431a343fca9e54:82cd2baf6720c9d98d5970c01305b3b1$"
+}
+}

@@ -1,0 +1,69 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" />
+    <title>Zipflex Entrega</title>
+    <link rel="icon" href="../assets/logo.png" type="image/x-icon"/>
+
+    
+    
+    <!-- Importa a biblioteca Phaser -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@v3.88.2/dist/phaser.min.js"></script>
+    <!-- Importa os arquivos das cenas do jogo -->
+    <script src="scenes/briefing.js"></script>
+    <script src="scenes/briefing2.js"></script>
+    <script src="scenes/fase.js"></script>
+    <!-- Adiciona alert com mais estilização -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        /* Remove a margem superior e o padding do corpo da página  */
+        body {
+            margin-top: 1px;
+            padding: 0;
+        }
+
+        /* Adiciona uma borda preta ao canvas do jogo */
+        canvas {
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Div onde o jogo será renderizado -->
+    <div id="game"></div>
+
+    <script type="text/javascript">
+        /* Definição das configurações globais do jogo */
+        const config = {
+            type: Phaser.AUTO,
+            scale: {
+                mode: Phaser.Scale.FIT // Ajusta o tamanho do jogo para caber na tela
+            },
+            autoCenter: Phaser.Scale.CENTER, // Centraliza automaticamente o jogo na tela
+            width: 960, // Largura da tela do jogo
+            height: 720, // Altura da tela do jogo
+            backgroundColor: '#39addd', // Cor de fundo do jogo
+            physics: {
+                default: 'matter', // Usa física Matter.js
+                arcade: {
+                    gravity: { y: 10 }, // Define a gravidade no eixo Y
+                    debug: false 
+                }
+            },
+            parent: "game", // Define a div onde o jogo será renderizado
+            dom: {
+               createContainer: true,
+            },
+            scene: [briefing, briefing2, fase] // Define as cenas do jogo
+        };
+        
+        // Criação do jogo com as configurações definidas
+        var game = new Phaser.Game(config);
+        
+        // Inicia a cena 'briefing' imediatamente ao carregar a página
+        game.scene.start('briefing');
+    </script>
+</body>
+</html>
