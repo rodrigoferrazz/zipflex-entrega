@@ -5,9 +5,9 @@ class briefing extends Phaser.Scene {
 
     /* Pré-carrega os recursos da cena, como imagens do site e do cursor.*/
     preload() {
-        this.load.image('site1', '../assets/1.png');   // Tela inicial do site
-        this.load.image('cursor', '../assets/cursor.png'); // Cursor padrão
-        this.load.image('click', '../assets/click.png');   // Cursor clicando
+        this.load.image('site1', '/assets/1.png');   // Tela inicial do site
+        this.load.image('cursor', '/assets/cursor.png'); // Cursor padrão
+        this.load.image('click', '/assets/click.png');   // Cursor clicando
     }
 
     create() {
