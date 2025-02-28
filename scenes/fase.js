@@ -9,12 +9,12 @@ class fase extends Phaser.Scene {
 
     preload() {
         // Carregando os assets do jogo
-        this.load.atlas('entregador', '/assets/personagem/personagem.png', '/assets/personagem/personagem.json');
-        this.load.image('fase', '/assets/terreno/Terrain (16x16).png');
-        this.load.image('background', '/assets/terreno/Blue.png');
-        this.load.tilemapTiledJSON('map', '/assets/terreno/terreno.json');
-        this.load.image('colchao', '/assets/objetos/colchao.png');
-        this.load.image('casa', '/assets/objetos/casa.png')
+        this.load.atlas('entregador', 'assets/personagem/personagem.png', 'assets/personagem/personagem.json');
+        this.load.image('fase', 'assets/terreno/Terrain (16x16).png');
+        this.load.image('background', 'assets/terreno/Blue.png');
+        this.load.tilemapTiledJSON('map', 'assets/terreno/terreno.json');
+        this.load.image('colchao', 'assets/objetos/colchao.png');
+        this.load.image('casa', 'assets/objetos/casa.png')
     }
 
     create() {
