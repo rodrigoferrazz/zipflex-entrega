@@ -36,6 +36,11 @@ class briefing2 extends Phaser.Scene {
                 this.scene.start('fase');
             }
         });
+        if(game.scale.orientation == Phaser.Scale.LANDSCAPE){
+            console.log("deitado")
+        } else if (game.scale.orientation == Phaser.Scale.PORTRAIT) {
+            alert("Deite seu celular!")
+        }
     }
 
     update() {}
