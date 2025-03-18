@@ -130,6 +130,13 @@ class fase extends Phaser.Scene {
                 }
             });
         });
+
+
+if(game.scale.orientation == Phaser.Scale.LANDSCAPE){
+    console.log("deitado")
+} else if (game.scale.orientation == Phaser.Scale.PORTRAIT) {
+    alert("Deite seu celular!")
+}
     }
 
     update() {
@@ -184,9 +191,4 @@ class fase extends Phaser.Scene {
             }
         }   
     }
-    if(game.scale.orientation == Phaser.Scale.LANDSCAPE){
-            console.log("deitado")
-        } else if (game.scale.orientation == Phaser.Scale.PORTRAIT) {
-            alert("Deite seu celular!")
-        }
 }
