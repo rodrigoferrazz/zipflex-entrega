@@ -41,6 +41,7 @@ class briefing2 extends Phaser.Scene {
         } else if (game.scale.orientation == Phaser.Scale.PORTRAIT) {
             alert("Deite seu celular!")
         }
+        
     }
 
     update() {}
