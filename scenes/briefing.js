@@ -11,6 +11,11 @@ class briefing extends Phaser.Scene {
     }
 
     create() {
+        if(game.scale.orientation == Phaser.Scale.LANDSCAPE){
+            console.log("deitado")
+        } else if (game.scale.orientation == Phaser.Scale.PORTRAIT) {
+            alert("Deite seu celular!")
+        }
         
         // Adiciona a imagem do site como plano de fundo
         this.add.image(480, 360, 'site1');
@@ -32,9 +37,4 @@ class briefing extends Phaser.Scene {
             }
         });
     }
-    if(game.scale.orientation == Phaser.Scale.LANDSCAPE){
-            console.log("deitado")
-        } else if (game.scale.orientation == Phaser.Scale.PORTRAIT) {
-            alert("Deite seu celular!")
-        }
 }
